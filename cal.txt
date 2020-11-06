@@ -1,0 +1,43 @@
+##Calculator Program -- pbain
+print("'Welcome to the calculator'")
+print("Please choose any operator:")
+print("1. Addition(+):"
+      "\n2. Subtraction(-):"
+      "\n3. Multiplication(*):"
+      "\n4. Division(/):")
+
+operator = input("Please enter any operator: ")
+
+if operator == "+":
+    print("Addition(+):"
+          "\nPlease enter any two integer numbers: ")
+elif operator == "-":
+    print("Subtraction(-):"
+          "\nPlease enter any two integer numbers: ")
+elif operator == "*":
+    print("Multiplication(*):"
+          "\nPlease enter any two integer numbers: ")
+elif operator == "/":
+    print("Division(/):"
+          "\nPlease enter any two integer numbers: ")
+else:
+    print("Wrong operator. Please try again.")
+
+number1 = input("1. Integer number: ")
+number2 = input("2. Integer number: ")
+
+addition = int(number1) + int(number2)
+subtraction = abs(int(number1) - int(number2))
+multiplication = int(number1) * int(number2)
+division = int(number1) / int(number2)
+
+if operator == "+":
+    print("Addition of those two numbers are: " + str(addition))
+elif operator == "-":
+    print("Absolute Subtraction of those two numbers are: " + str(subtraction))
+elif operator == "*":
+    print("Multiplication of those two numbers are: " + str(multiplication))
+else:
+    print("Division of those two numbers are: " + str(division))
+
+print("Thank you for your time and using this simple program.")
